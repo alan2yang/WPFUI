@@ -11,4 +11,12 @@ namespace WpfAppDemo1.Entity
         public string FilePath { get; set; }
         public string SignTime { get; set; }
     }
+
+    class TransactionModel
+    {
+        public int ID { get; set; }
+        public string UserName { get; set; }
+        public DateTime TDate { get; set; }
+        public string Price { get; set; }
+    }
 }

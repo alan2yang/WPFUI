@@ -536,9 +536,120 @@
             </UniformGrid>
             
             <!--第三部分-->
-            <Grid>
-                
-            </Grid>
+            <UniformGrid Columns="2" Grid.Row="2" Margin="45 10 45 10">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition Height="3*"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Text="Sales Report" FontSize="22" Foreground="#5b6b74" VerticalAlignment="Center" ></TextBlock>
+                    <Border Background="White" CornerRadius="10" Grid.Row="1">
+                        <Border.Effect>
+                            <DropShadowEffect ShadowDepth="10" BlurRadius="50" Direction="270" Opacity="0.8"></DropShadowEffect>
+                        </Border.Effect>
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+
+                            <Border BorderThickness="6" BorderBrush="#717171" CornerRadius="60" Width="120" Height="120">
+                                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                                    <TextBlock Text="55%" FontSize="30" HorizontalAlignment="Center" Foreground="#717171"/>
+                                    <TextBlock Text="Mobile Sales"/>
+                                </StackPanel>
+                            </Border>
+                            
+                            <!--这一块数据应该是动态获取的-->
+                            <StackPanel Grid.Column="1" Orientation="Vertical">
+                                <StackPanel Orientation="Horizontal" Margin="0 10 10 10">
+                                    <Border Width="10" Height="10" Background="#5ae5b3" CornerRadius="10"/>
+                                    <TextBlock Text="Desktop" VerticalAlignment="Center" Margin="5 0 0 0"/>
+                                </StackPanel>
+                                
+                                <TextBlock Text="$3213" FontSize="20" Foreground="#576770" Margin="15 0 0 0"></TextBlock>
+                                
+                                <StackPanel Orientation="Horizontal" Margin="0 10 10 10">
+                                    <Border Width="10" Height="10" Background="Red" CornerRadius="10"/>
+                                    <TextBlock Text="Desktop  $3213  30%" VerticalAlignment="Center" Margin="5 0 0 0"/>
+                                </StackPanel>
+
+                                <StackPanel Orientation="Horizontal" Margin="0 10 10 10">
+                                    <Border Width="10" Height="10" Background="#B03060" CornerRadius="10"/>
+                                    <TextBlock Text="Tablet  $3213  30%" VerticalAlignment="Center" Margin="5 0 0 0"/>
+                                </StackPanel>
+
+                                <StackPanel Orientation="Horizontal" Margin="0 10 10 10">
+                                    <Border Width="10" Height="10" Background="#ffc000" CornerRadius="10"/>
+                                    <TextBlock Text="Call  $3213  30%" VerticalAlignment="Center" Margin="5 0 0 0"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                </Grid>
+
+                <Grid Margin="25 0 0 0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition Height="3*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Transactions" FontSize="22" Foreground="#5b6b74" VerticalAlignment="Center" ></TextBlock>
+                    <Border HorizontalAlignment="Right" Margin="0 0 10 0" Width="60" Height="20" BorderThickness="1" BorderBrush="#717171" CornerRadius="10">
+                        <TextBlock Text="SEE ALL" Foreground="#5b6b74" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                    </Border>
+
+                    <Border Background="White" CornerRadius="10" Grid.Row="1">
+                        <Border.Effect>
+                            <DropShadowEffect ShadowDepth="10" BlurRadius="50" Direction="270" Opacity="0.8"></DropShadowEffect>
+                        </Border.Effect>
+
+
+                        <ItemsControl ItemsSource="{Binding TransactionViewModels}" Grid.Row="1">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <StackPanel></StackPanel>
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <!--列表模板-->
+                                    <Grid Height="30" Margin="5 5 5 0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition ></ColumnDefinition>
+                                            <ColumnDefinition Width="2*"></ColumnDefinition>
+                                            <ColumnDefinition Width="2*"></ColumnDefinition>
+                                            <ColumnDefinition ></ColumnDefinition>
+                                            <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                                        </Grid.ColumnDefinitions>
+                                        <TextBlock Text="{Binding ID}" VerticalAlignment="Center"></TextBlock>
+                                        
+                                        <StackPanel Grid.Column="1" Orientation="Horizontal">
+                                            <Image Source="{Binding FilePath}" Width="20" Height="20" Stretch="Fill">
+                                                <Image.Clip>
+                                                    <EllipseGeometry RadiusX="10" RadiusY="10" Center="10,10"></EllipseGeometry>
+                                                </Image.Clip>
+                                            </Image>
+                                            <TextBlock Text="{Binding UserName}" VerticalAlignment="Center"></TextBlock>
+                                        </StackPanel>
+
+                                        <TextBlock Text="{Binding TDate}" Grid.Column="2" VerticalAlignment="Center"></TextBlock>
+
+                                        <TextBlock Text="{Binding Price}" Foreground="#91979a" Grid.Column="3" VerticalAlignment="Center"></TextBlock>
+                                        
+                                        <TextBlock Text="···" Foreground="#91979a" Grid.Column="4" VerticalAlignment="Center"></TextBlock>
+
+                                    </Grid>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+
+
+                    </Border>
+                </Grid>
+            </UniformGrid>
         </Grid>
         
     </Grid>
