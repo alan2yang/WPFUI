@@ -1,9 +1,8 @@
 # WPFUI
 WPF UI实现练习
+## 1.WpfAppDemo1
 
-
- # WpfAppDemo1中存在的一些疑问
- xaml
+ ### 存在的一些疑问
  
  1.Window.Resources的作用是什么？
  
@@ -13,3 +12,12 @@ WPF UI实现练习
  
  4.mvvm的实现方式？模板数据绑定的实现方式？
  5.如何实现表格数据的展示？
+
+
+
+ ## 2.WpfAppDemo2
+
+
+ ### 存在的一些疑问
+
+
