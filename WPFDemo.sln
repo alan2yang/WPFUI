@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfAppDemo2", "WpfAppDemo2\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Practice", "Practice", "{63AA0B94-4647-446D-BF61-E9A5C4145807}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P1", "P1\P1.csproj", "{4CACCE02-5F0A-4CA5-AA6E-0DD4349A4CCC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P1", "P1\P1.csproj", "{4CACCE02-5F0A-4CA5-AA6E-0DD4349A4CCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P2", "P2\P2.csproj", "{A3E99A8B-7EB3-4A4D-97CB-5717DDE0D736}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,12 +37,17 @@ Global
 		{4CACCE02-5F0A-4CA5-AA6E-0DD4349A4CCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CACCE02-5F0A-4CA5-AA6E-0DD4349A4CCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CACCE02-5F0A-4CA5-AA6E-0DD4349A4CCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3E99A8B-7EB3-4A4D-97CB-5717DDE0D736}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3E99A8B-7EB3-4A4D-97CB-5717DDE0D736}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3E99A8B-7EB3-4A4D-97CB-5717DDE0D736}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3E99A8B-7EB3-4A4D-97CB-5717DDE0D736}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{4CACCE02-5F0A-4CA5-AA6E-0DD4349A4CCC} = {63AA0B94-4647-446D-BF61-E9A5C4145807}
+		{A3E99A8B-7EB3-4A4D-97CB-5717DDE0D736} = {63AA0B94-4647-446D-BF61-E9A5C4145807}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {83CDE3E4-E627-43EA-94E8-176B16B3A922}

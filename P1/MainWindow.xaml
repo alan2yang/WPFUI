@@ -3,10 +3,10 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:local="clr-namespace:P1"
         Title="MainWindow" Height="450" Width="800">
-    <!-- DataContext作为binding的源 -->
+     <!--DataContext作为binding的源--> 
     <StackPanel Background="LightBlue">
         <StackPanel.DataContext>
-            <local:Student Id="6" Age="29" Name="Tom"/>
+            <local:Student Id="6" Age="29" Name="Tom"></local:Student>
         </StackPanel.DataContext>
 
         <Grid>
@@ -27,3 +27,8 @@
         
     </StackPanel>
 </Window>
+
+
+
+
+
