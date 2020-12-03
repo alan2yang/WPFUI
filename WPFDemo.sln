@@ -17,7 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Practice", "Practice", "{63
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P1", "P1\P1.csproj", "{4CACCE02-5F0A-4CA5-AA6E-0DD4349A4CCC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P2", "P2\P2.csproj", "{A3E99A8B-7EB3-4A4D-97CB-5717DDE0D736}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P2", "P2\P2.csproj", "{A3E99A8B-7EB3-4A4D-97CB-5717DDE0D736}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
